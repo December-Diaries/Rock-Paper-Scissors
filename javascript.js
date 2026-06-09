@@ -109,8 +109,11 @@ function playGame(){
     if (human_score>comp_score){
         console.log(`\nYou win the game.`);
     }
-    else{
+    else if (comp_score>human_score){
         console.log(`\nYou lose.`)
+    }
+    else{
+        console.log('\nIts a draw.')
     }
     
     
